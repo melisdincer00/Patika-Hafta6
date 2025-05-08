@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Sayfa gövdesi ayarları */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f8; 
+  font-family: "Zilla Slab", serif;
+}
+
+/* NAVBAR*/
+
+/* Navigasyon çubuğunun yazı boyutu */
+.navbar {
+  font-size: 1rem;
+}
+
+/* Marka ismi (sol üstteki başlık) */
+.navbar-brand {
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Menüdeki bağlantı stilleri */
+.navbar .nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Üzerine gelince renk değiştir */
+.navbar .nav-link:hover {
+  color: #ff6a23;
+}
+
+
+/* HERO BÖLÜMÜ*/
+
+/* Hero arka plan görseli ve pozisyonlama */
+.hero {
+  background-color: #efdfdf; 
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: transparent;  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Hero başlığı */
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  color: #ff0000;
+  text-shadow: 2px 2px 10px #000;
+}
+
+/* Hero alt yazısı */
+.hero-sub {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+/* Keşfet butonu */
+.hero-btn {
+  background-color: #e63946;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Buton hover efekti */
+.hero-btn:hover {
+  background-color: #a4161a;
+}
+
+/* MENÜ BÖLÜMÜ*/
+
+/* Menü başlığı */
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  text-align: center;
+  color: #ff6a23;
+}
+
+/* Menü üst boşluğu */
+.menu {
+  margin-top: 40px;
+}
+
+/* Buton konteyneri (kategori filtreleme) */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+/* Tek tek butonların kenar boşlukları */
+.btn-item {
+  margin: 10px;
+}
+
+/* MENÜ KARTLARI*/
+
+/* Yemek görseli */
+.photo {
+  width: 30%;
+  height: 175px;
+  object-fit: cover;
+  border: 0.25rem solid black;
+  border-radius: 10px;
+}
+
+/* Menü kartı yatay olarak düzenlenir */
+.menu-items {
+  display: flex;
+  margin: 20px 0;
+}
+
+/* Görselin sağındaki bilgi alanı */
+.menu-info {
+  margin-left: 20px;
+  width: 100%;
+}
+
+/* Kartın başlık kısmı */
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+/* Açıklama metni */
+.menu-text {
+  padding-top: 20px;
+}
+
+/* Fiyat ve başlık rengi */
+h4 {
+  color: #e00a00; 
+}
+
+/* RESPONSIVE*/
+
+@media (max-width: 768px) {
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photo {
+    width: 100%;
+    height: 200px;
+  }
+
+  .menu-info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .menu-title {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
