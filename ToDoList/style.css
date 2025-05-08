@@ -1,0 +1,113 @@
+body {
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+/* Uygulama kutusu */
+.container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 30px;
+}
+
+/* Üst başlık alanı */
+.header {
+  background-color: #f78501;
+  padding: 30px 20px 50px;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Logo */
+.header img {
+  background: white;
+  margin-bottom: 10px;
+}
+
+/* Görev girişi */
+input[type="text"] {
+  width: 70%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+/* Ekle butonu */
+.button {
+  width: 30%;
+  background-color: #333;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Butona hover efekti */
+.button:hover {
+  background-color: #444;
+}
+
+/* Liste sıfırlama */
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Görev satırı */
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+/* Checkbox görünümü */
+.task-checkbox {
+  margin-right: 15px;
+  transform: scale(1.7);
+  cursor: pointer;
+}
+
+/* Görev metni */
+.task-text {
+  flex: 1;
+  font-size: 20px;
+  color: black;
+}
+
+/* Görev tamamlandı stili */
+.task-checkbox:checked + .task-text {
+  text-decoration: line-through;
+  text-decoration-color: #e74c3c;
+  color: black;
+}
+
+/* Silme butonu */
+.close {
+  font-size: 24px;
+  padding: 5px 10px;
+  color: #999;
+  cursor: pointer;
+}
+
+/* Silme üzerine gelince */
+.close:hover {
+  color: #e74c3c;
+}
