@@ -27,7 +27,9 @@ JavaScript ile dinamik olarak oluşturulan menü kartları ve filtreleme sistemi
 
 ## 📸 Proje Ekran Görüntüsü
 
-![Asian Kitchen Menu Screenshot](https://i.imgur.com/Bk7JXfQ.png)
+![Asian Kitchen Menu Screenshot](images/gorsel1.jpg)
+![Asian Kitchen Menu Screenshot](images/gorsel2.jpg)
+![Asian Kitchen Menu Screenshot](images/gorsel3.jpg)
 
 
 
